@@ -1,18 +1,18 @@
 import { defineStore } from 'pinia'
-
+//show the type of product
 interface Product{
   title:string
   id:string
 }
 
-
+//a object to return products and others
 type State = {
   products: Product[],
   product?: Product,
   new?: Product[],
   count: number,
 }
-
+//difin and add product
 export const useProductStore = defineStore('product', {
   state: (): State => {
     return { 
@@ -31,6 +31,7 @@ export const useProductStore = defineStore('product', {
         count:0
     }
   },
+  //our methods
   actions: {
     add(){
         this.new[this.count]=this.product
