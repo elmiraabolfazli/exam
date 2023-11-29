@@ -40,6 +40,6 @@ export const useProductStore = defineStore('product', {
      removed(id:string){
       this.new  =  this.new.filter((product: { id: string }) => product.id!==id)
       this.count--
-     }
+     },
   },
 })

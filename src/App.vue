@@ -4,9 +4,9 @@ import product from './components/product.vue';
 </script>
 
 <template>
- <product/>
+ <product />
   <HelloWorld msg="Vite + Vue" />
-</template>
+</template >
 
 <style scoped>
 .logo {
